@@ -32,10 +32,10 @@ int main()
         std::cout << responseData << "\n";
         return 0;
         } else {
-    	    std::cerr << "curl status error!\n";
+    	    std::cerr << "curl status not success: " << response_code << std::endl;
     	    return 1;
         }
     }
-    std::cout << "Hello, World!\n";
-    return 0;
+    std::cerr << "error!\n";
+    return 1;
 }
